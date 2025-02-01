@@ -73,16 +73,16 @@ const imagePaths = [
 ];
 
 noButton.addEventListener('click', function() {
-    if (noClickCount < imagePaths.length) {
+    if (noClickCount < imagePaths.length - 1) {
         noClickCount++;
         imageDisplay.src = imagePaths[noClickCount];
-        buttonHeight += 35; // Increase height by 5px on each click
+        buttonHeight += 35; // Increase height by 35px on each click
         buttonWidth += 35;
-        fontSize += 25; // Increase font size by 1px on each click
+        fontSize += 25; // Increase font size by 25px on each click
         yesButton.style.height = `${buttonHeight}px`; // Update button height
         yesButton.style.width = `${buttonWidth}px`;
         yesButton.style.fontSize = `${fontSize}px`; // Update font size
-        if (noClickCount < 10) {
+        if (noClickCount < 11) {
             noButton.textContent = [
                 "No",
                 "Are you sure?",
@@ -94,7 +94,7 @@ noButton.addEventListener('click', function() {
                 "Sigeee naaaaa",
                 "Mu Yes nani siya heheheh",
                 "Muhilak gud ko :(",
-                "Me cryinggg naa :((((("
+                "Me cryinggg naa :((((((",
             ][noClickCount];
         }
     }
