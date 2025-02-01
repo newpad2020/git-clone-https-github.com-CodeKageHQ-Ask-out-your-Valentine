@@ -55,27 +55,25 @@
     const responseButtons = document.getElementById('responseButtons');
   
     let noClickCount = 0;
-    let buttonHeight = 48; // Starting height in pixels
-    let buttonWidth = 80;
-    let fontSize = 20; // Starting font size in pixels
-    const imagePaths = [
-  
-            "./images/0.gif",
-            "./images/1.gif",
-            "./images/2.gif",
-            "./images/3.gif",
-            "./images/4.gif",
-            "./images/5.gif",
-            "./images/6.gif",
-            "./images/7.gif",
-            "./images/8.gif",
-            "./images/9.gif",
-            "./images/10.gif",
-     
-    ];
-  
-    noButton.addEventListener('click', function() {
-      if (noClickCount < 5) {
+let buttonHeight = 48; // Starting height in pixels
+let buttonWidth = 80;
+let fontSize = 20; // Starting font size in pixels
+const imagePaths = [
+    "./images/0.gif",
+    "./images/1.gif",
+    "./images/2.gif",
+    "./images/3.gif",
+    "./images/4.gif",
+    "./images/5.gif",
+    "./images/6.gif",
+    "./images/7.gif",
+    "./images/8.gif",
+    "./images/9.gif",
+    "./images/10.gif"
+];
+
+noButton.addEventListener('click', function() {
+    if (noClickCount < imagePaths.length) {
         noClickCount++;
         imageDisplay.src = imagePaths[noClickCount];
         buttonHeight += 35; // Increase height by 5px on each click
@@ -85,20 +83,22 @@
         yesButton.style.width = `${buttonWidth}px`;
         yesButton.style.fontSize = `${fontSize}px`; // Update font size
         if (noClickCount < 11) {
-          noButton.textContent = ["No", 
-                                  "Are you sure?", 
-                                  "Suree naguuddd?", 
-                                  "Bebuu Don't do this to me :(", 
-                                  "Preeetttyy Pleeaasseee", 
-                                  "Ana si Pikachu Please nga witness sa atong first holding hands :)",
-                                  "I give you my heart baaksss", 
-                                  "Sigeee naaaaa", 
-                                  "Mu Yes nani siya heheheh", 
-                                  "Muhilak gud ko :(", 
-                                  "Me cryinggg naa :((((("][noClickCount];
+            noButton.textContent = [
+                "No",
+                "Are you sure?",
+                "Suree naguuddd?",
+                "Bebuu Don't do this to me :(",
+                "Preeetttyy Pleeaasseee",
+                "Ana si Pikachu Please nga witness sa atong first holding hands :)",
+                "I give you my heart baaksss",
+                "Sigeee naaaaa",
+                "Mu Yes nani siya heheheh",
+                "Muhilak gud ko :(",
+                "Me cryinggg naa :((((("
+            ][noClickCount];
         }
-      }
-    });
+    }
+});
   
     yesButton.addEventListener('click', () => {
       imageDisplay.src = './images/image7.gif'; // Change to image7.gif
