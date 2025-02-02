@@ -82,7 +82,7 @@ noButton.addEventListener('click', function() {
         yesButton.style.height = `${buttonHeight}px`; // Update button height
         yesButton.style.width = `${buttonWidth}px`;
         yesButton.style.fontSize = `${fontSize}px`; // Update font size
-        if (noClickCount < 8) { // Ensure the array indexing is correct
+        if (noClickCount < 9) { // Ensure the array indexing is correct
             noButton.textContent = [
                 "No",
                 "Noooo guddd??",
@@ -98,7 +98,7 @@ noButton.addEventListener('click', function() {
         }
     }
 });
-
+    
 yesButton.addEventListener('click', () => {
     imageDisplay.src = './images/10.gif'; // Change to image7.gif
     valentineQuestion.textContent = "Yayyy me so happpyyy!! :3"; // Change the question text
