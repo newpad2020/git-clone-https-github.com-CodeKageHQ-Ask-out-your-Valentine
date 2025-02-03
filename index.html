@@ -101,14 +101,11 @@ noButton.addEventListener('click', function() {
     
 yesButton.addEventListener('click', () => {
     imageDisplay.src = './images/10.gif'; // Change to image7.gif
-    valentineQuestion.textContent = "Yaaayy:))) an email will be sent to you this coming day! Mwuah"; // Change the question text
+    valentineQuestion.textContent = "Thank you for saying Yes Valentine's Day, Baks! I'm sorry it took me a while to invite you. Hehehe, I tried to create the invitation from scratch and thought it would be easy, but I had to study a bit about this code to implement my own touches. Hahaha! An email will be sent to you for the details!"; // Change the question text
     responseButtons.style.display = 'none'; // Hide both buttons
     confetti(); // Trigger confetti animation
 
-    // Add new paragraph
-    const newParagraph = document.createElement('p');
-    newParagraph.innerHTML = "Thank you for saying Yes Valentine's Day, Baks! I'm sorry it took me a while to invite you. Hehehe, I tried to create the invitation from scratch and thought it would be easy, but I had to study a bit about this code to implement my own touches. Hahaha! An email will be sent to you for the details!";
-    document.body.appendChild(newParagraph);
+   
 });
   </script>  
 </body>
